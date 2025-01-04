@@ -1,4 +1,4 @@
-# Patika Create First Class App
+# Patika - Create First Class App
 
 This project demonstrates the creation and usage of a simple class in C#. The `Person` class is used to represent individuals with properties such as name, surname, and birth date. The application creates multiple instances of the `Person` class and displays their information on the console.
 
