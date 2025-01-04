@@ -26,10 +26,17 @@ namespace PatikaCreateFirstClassApp
             teacherTwo.Surname = "Solmaz";
             teacherTwo.BirthDate = new DateTime(1988, 4, 12);
 
-            Console.WriteLine($"Birinci ögrencinin adi-soyadi: {studentOne.Name} {studentOne.Surname}. Dogum tarihi: {studentOne.BirthDate.ToString("dd.MM.yyyy")}");
-            Console.WriteLine($"İkinci ögrencinin adi-soyadi: {studentTwo.Name} {studentTwo.Surname}. Dogum tarihi: {studentTwo.BirthDate.ToString("dd.MM.yyyy")}");
-            Console.WriteLine($"Birinci ögretmenin adi-soyadi: {teacherOne.Name} {teacherOne.Surname}. Dogum tarihi: {teacherOne.BirthDate.ToString("dd.MM.yyyy")}");
-            Console.WriteLine($"İkinci ögretmenin adi-soyadi: {teacherTwo.Name} {teacherTwo.Surname}. Dogum tarihi: {teacherTwo.BirthDate.ToString("dd.MM.yyyy")}");
+            Console.Write($"Birinci ögrencinin ");
+            studentOne.DisplayPerson(studentOne.Name, studentOne.Surname, studentOne.BirthDate);
+
+            Console.Write($"İkinci ögrencinin ");
+            studentTwo.DisplayPerson(studentTwo.Name, studentTwo.Surname, studentTwo.BirthDate);
+
+            Console.Write($"Birinci ögretmenin ");
+            teacherOne.DisplayPerson(teacherOne.Name, teacherOne.Surname, teacherOne.BirthDate);
+
+            Console.Write($"İkinci ögretmenin ");
+            teacherTwo.DisplayPerson(teacherTwo.Name, teacherTwo.Surname, teacherTwo.BirthDate);
 
         }
     }

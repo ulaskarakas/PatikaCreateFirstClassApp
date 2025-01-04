@@ -28,5 +28,10 @@ namespace PatikaCreateFirstClassApp
             get { return birthDate; }
             set { birthDate = value; }
         }
+
+        public void DisplayPerson(string name, string surname, DateTime birthDate)
+        {
+            Console.WriteLine($"adi-soyadi: {name} {surname}. Dogum tarihi: {birthDate.ToString("dd.MM.yyyy")}");
+        }
     }
 }
